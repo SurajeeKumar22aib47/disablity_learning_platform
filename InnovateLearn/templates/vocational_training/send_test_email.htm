@@ -1,0 +1,19 @@
+<!-- vocational_training/send_test_email.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Test Email</title>
+</head>
+<body>
+    <h1>Send Test Email</h1>
+    <p>This is a test email template. You can customize it as needed.</p>
+    <form action="{% url 'send_test_email' %}" method="post">
+        {% csrf_token %}
+        <!-- Add form fields for email content or any other parameters -->
+        <button type="submit">Send Email</button>
+    </form>
+</body>
+</html>
