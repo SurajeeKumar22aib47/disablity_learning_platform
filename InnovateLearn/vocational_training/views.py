@@ -18,7 +18,7 @@ def random_letters(request):
     return render(request, 'vocational_training/level.html', {'level': 'random letters'})
 # views.py
 
-from django.shortcuts import render
+
 
 def basic_words(request):
     return render(request, 'vocational_training/basic_words.html', {'level': 'Basic Words'})
